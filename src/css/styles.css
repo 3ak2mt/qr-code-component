@@ -1,10 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 @import url("sr-only.css");
 
-:root {
-    /* screens */
-    --screen-mobile: 576px;
+@font-face {
+    font-family: "Outfit";
+    src: url("../fonts/Outfit-VariableFont_wght.woff2") format("woff2");
+    font-weight: 100 900;
+    font-stretch: 75% 100%;
+    font-style: normal;
+}
 
+:root {
     /* colors */
     --cr-blue-400: 212, 45%, 45%;
     --cr-blue-500: 220, 15%, 55%;
