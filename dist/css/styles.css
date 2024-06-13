@@ -1,11 +1,3 @@
-@font-face {
-    font-family: "Outfit";
-    src: url("../fonts/Outfit-VariableFont_wght.woff2") format("woff2");
-    font-weight: 100 900;
-    font-stretch: 75% 100%;
-    font-style: normal;
-}
-
 /*
 	Improved screen reader only CSS class
 	@author Gaël Poupard
@@ -36,15 +28,15 @@
 */
 
 .sr-only {
-    border: 0 !important;
-    clip: rect(1px, 1px, 1px, 1px) !important; /* 1 */
-    clip-path: inset(50%) !important; /* 2 */
-    height: 1px !important;
-    overflow: hidden !important;
-    padding: 0 !important;
-    position: absolute !important;
-    width: 1px !important;
-    white-space: nowrap !important; /* 3 */
+	border: 0 !important;
+	clip: rect(1px, 1px, 1px, 1px) !important; /* 1 */
+	clip-path: inset(50%) !important;  /* 2 */
+	height: 1px !important;
+	overflow: hidden !important;
+	padding: 0 !important;
+	position: absolute !important;
+	width: 1px !important;
+	white-space: nowrap !important;            /* 3 */
 }
 
 /*
@@ -58,12 +50,21 @@
 */
 .sr-only-focusable:focus,
 .sr-only-focusable:active {
-    clip: auto !important;
-    clip-path: none !important;
-    height: auto !important;
-    overflow: visible !important;
-    width: auto !important;
-    white-space: normal !important;
+	clip: auto !important;
+	clip-path: none !important;
+	height: auto !important;
+	overflow: visible !important;
+	width: auto !important;
+	white-space: normal !important;
+}
+
+
+@font-face {
+    font-family: "Outfit";
+    src: url("../fonts/Outfit/Outfit-VariableFont_wght.woff2") format("woff2");
+    font-weight: 100 900;
+    font-stretch: 75% 100%;
+    font-style: normal;
 }
 
 :root {
