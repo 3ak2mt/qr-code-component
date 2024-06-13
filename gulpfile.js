@@ -52,7 +52,6 @@ const styleCSS = async () => {
         .pipe(gulpReplace('@import url("sr-only.css");\n', ""))
         .pipe(gulpAutoprefixer())
         .pipe(gulpConcat("styles.css"))
-        .pipe(gulp.dest(paths.css.dest))
         .pipe(gulpCssNano())
         .pipe(gulpRename({ suffix: ".min" }))
         .pipe(gulpSourceMaps.write("."))
